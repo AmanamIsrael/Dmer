@@ -1,0 +1,35 @@
+.wrapper>.box {
+    width: 600px;
+    height: max-content;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+
+.header {
+    height: 50px;
+}
+
+.header>.container {
+    border-bottom: 1px solid rgb(233, 233, 233);
+}
+
+.sidebar {
+    border-right: 1px solid rgb(233, 233, 233);
+    height: 250px;
+}
+
+.chat-box {
+    height: 250px;
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+}
+
+.message {
+    border-radius: 5px;
+    background-color: #ffffff;
+    border: 1px solid rgb(233, 233, 233);
+}
+
+.footer {
+    border-top: 1px solid rgb(233, 233, 233);
+}
