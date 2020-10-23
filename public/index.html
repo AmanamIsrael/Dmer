@@ -15,24 +15,25 @@
         <h4 class="mb-4">Dmer 📩</h4>
         <div class="box">
             <div class="container-fluid my-4">
-                <form action="">
+                <form action="chat.html">
                     <div class="form-group">
                         <label for="username">Your Username</label>
-                        <input type="text" class="form-control" id="username" aria-describedby="emailHelp">
+                        <input type="text" minlength="3" required class="form-control" name="username" id="username" aria-describedby="emailHelp">
                     </div>
                     <div class="form-group">
                         <label for="roomSelect">Example multiple select</label>
-                        <select class="form-control" id="roomSelect">
-                        <option>Room 1</option>
-                        <option>Room 2</option>
+                        <select required class="form-control" name="room" id="roomSelect">
+                        <option>Love</option>
+                        <option>School</option>
+                        <option>Fun</option>
+                        <option>Random</option>
                         </select>
                     </div>
-                    <button class="btn btn-info d-block ml-auto">Join Room</button>
+                    <button type="submit" class="btn btn-info d-block ml-auto">Join Room</button>
                 </form>
             </div>
         </div>
     </div>
-    <script src="./js/main.js"></script>
 </body>
 
 </html>

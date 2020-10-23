@@ -16,50 +16,43 @@
         <div class="box">
             <div class="header">
                 <div class="container h-100 d-flex justify-content-between align-items-center">
-                    <div>
-                        <b>Chat Room</b>
+                    <div id="roomname">
                     </div>
                     <div>
-                        <button class="btn btn-success">Leave room</button>
+                        <button id="leave" class="btn btn-success">Leave room</button>
                     </div>
                 </div>
             </div>
             <div class="no-gutters row">
                 <div class="col-4 sidebar">
-                    <div class="container my-2">
-                        <span>
-                            <strong class="d-block">
-                                <i class="fas fa-comment-alt text-danger"></i>
-                                Room Name:
-                            </strong>
-                            Love
-                        </span>
+                    <div class="h-100 container my-2">
                         <span class="d-block mt-2">
                             <strong class="d-block">
                                 <i class="text-success fas fa-users"></i>
                                 Members:
                             </strong>
-                            5
+                            <div class="users-wrapper">
+                                <ul id="users"></ul>
+                            </div>
                         </span>
                     </div>
                 </div>
                 <div class="col-8">
                     <div class="container chat-box">
-                        <div class="message p-2 my-2">
-                            <h6 class="m-0">message🤓</h6>
-                            <small class="text-info">Israel 11:12am</small>
-                        </div>
                     </div>
                 </div>
             </div>
             <div class="message-box d-flex align-items-center">
-                <div class="container h-100 py-3 footer d-flex flex-row">
-                    <input type="email" class="form-control" id="messageBox" placeholder="your message">
-                    <button class="btn btn-info ml-2 px-3">Send</button>
-                </div>
+                <form id="messageForm" class="w-100 container h-100 py-3 footer d-flex flex-row">
+                    <input type="text" required class="form-control" id="messageBox" placeholder="your message">
+                    <button type="submit" class="btn btn-info ml-2 px-3">Send</button>
+                </form>
             </div>
         </div>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.9.4/qs.min.js" integrity="sha512-BHtomM5XDcUy7tDNcrcX1Eh0RogdWiMdXl3wJcKB3PFekXb3l5aDzymaTher61u6vEZySnoC/SAj2Y/p918Y3w==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 
 </html>

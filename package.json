@@ -1,0 +1,25 @@
+{
+    "name": "chatapp",
+    "version": "1.0.0",
+    "description": "chatapp",
+    "main": "index.js",
+    "scripts": {
+        "start": "node index"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/AmanamIsrael/chatapp.git"
+    },
+    "author": "Amanam israel",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/AmanamIsrael/chatapp/issues"
+    },
+    "homepage": "https://github.com/AmanamIsrael/chatapp#readme",
+    "dependencies": {
+        "express": "^4.17.1",
+        "moment": "^2.29.1",
+        "nodemon": "^2.0.6",
+        "socket.io": "^2.3.0"
+    }
+}
