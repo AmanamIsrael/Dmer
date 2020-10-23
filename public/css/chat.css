@@ -35,6 +35,10 @@
     border: 1px solid rgb(233, 233, 233);
 }
 
+.message>h6 {
+    line-break: anywhere;
+}
+
 .footer {
     border-top: 1px solid rgb(233, 233, 233);
 }
